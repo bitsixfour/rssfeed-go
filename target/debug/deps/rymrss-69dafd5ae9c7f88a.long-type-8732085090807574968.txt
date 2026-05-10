@@ -1,0 +1,1 @@
+&dyn Future<Output = Result<String, Box<dyn std::error::Error>>>
