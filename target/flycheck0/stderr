@@ -1,0 +1,451 @@
+   0.086448402s  INFO prepare_target{force=false package_id=rymrss v0.1.0 (/home/will/git/rymrss) target="rymrss"}: cargo::core::compiler::fingerprint: fingerprint error for rymrss v0.1.0 (/home/will/git/rymrss)/Check { test: false }/TargetInner { name: "rymrss", doc: true, ..: with_path("/home/will/git/rymrss/src/main.rs", Edition2024) }
+   0.086471164s  INFO prepare_target{force=false package_id=rymrss v0.1.0 (/home/will/git/rymrss) target="rymrss"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/rymrss/target/debug/.fingerprint/rymrss-69dafd5ae9c7f88a/bin-rymrss`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::io::error::Error as anyhow::context::ext::StdError>::ext_context::<alloc::string::String>
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::prepare_target
+   3: cargo::core::compiler::compile
+   4: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   5: cargo::ops::cargo_compile::compile_ws
+   6: cargo::ops::cargo_compile::compile_with_exec
+   7: cargo::ops::cargo_compile::compile
+   8: cargo::commands::check::exec
+   9: <cargo::cli::Exec>::exec
+  10: cargo::cli::main
+  11: cargo::main
+  12: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  13: std::rt::lang_start::<()>::{closure#0}
+  14: std::rt::lang_start_internal
+  15: main
+  16: __libc_start_call_main
+  17: __libc_start_main_alias_2
+  18: _start
+   0.089747519s  INFO prepare_target{force=false package_id=reqwest v0.13.3 target="reqwest"}: cargo::core::compiler::fingerprint: fingerprint dirty for reqwest v0.13.3/Check { test: false }/TargetInner { ..: lib_target("reqwest", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/reqwest-0.13.3/src/lib.rs", Edition2021) }
+   0.089758760s  INFO prepare_target{force=false package_id=reqwest v0.13.3 target="reqwest"}: cargo::core::compiler::fingerprint:     dirty: UnitDependencyInfoChanged { unit: UnitIndex(124) }
+   0.092121112s  INFO prepare_target{force=false package_id=hyper-rustls v0.27.9 target="hyper_rustls"}: cargo::core::compiler::fingerprint: fingerprint dirty for hyper-rustls v0.27.9/Check { test: false }/TargetInner { ..: lib_target("hyper_rustls", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hyper-rustls-0.27.9/src/lib.rs", Edition2021) }
+   0.092131842s  INFO prepare_target{force=false package_id=hyper-rustls v0.27.9 target="hyper_rustls"}: cargo::core::compiler::fingerprint:     dirty: UnitDependencyInfoChanged { unit: UnitIndex(124) }
+   0.092779499s  INFO prepare_target{force=false package_id=rustls v0.23.40 target="rustls"}: cargo::core::compiler::fingerprint: fingerprint dirty for rustls v0.23.40/Check { test: false }/TargetInner { ..: lib_target("rustls", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustls-0.23.40/src/lib.rs", Edition2021) }
+   0.092788055s  INFO prepare_target{force=false package_id=rustls v0.23.40 target="rustls"}: cargo::core::compiler::fingerprint:     dirty: UnitDependencyInfoChanged { unit: UnitIndex(106) }
+   0.093016150s  INFO prepare_target{force=false package_id=aws-lc-rs v1.16.3 target="aws_lc_rs"}: cargo::core::compiler::fingerprint: fingerprint dirty for aws-lc-rs v1.16.3/Check { test: false }/TargetInner { ..: lib_target("aws_lc_rs", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-rs-1.16.3/src/lib.rs", Edition2021) }
+   0.093023394s  INFO prepare_target{force=false package_id=aws-lc-rs v1.16.3 target="aws_lc_rs"}: cargo::core::compiler::fingerprint:     dirty: UnitDependencyInfoChanged { unit: UnitIndex(5) }
+   0.093289990s  INFO prepare_target{force=false package_id=aws-lc-rs v1.16.3 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint dirty for aws-lc-rs v1.16.3/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-rs-1.16.3/build.rs", Edition2021) }
+   0.093297915s  INFO prepare_target{force=false package_id=aws-lc-rs v1.16.3 target="build-script-build"}: cargo::core::compiler::fingerprint:     dirty: UnitDependencyInfoChanged { unit: UnitIndex(8) }
+   0.096173784s  INFO prepare_target{force=false package_id=aws-lc-sys v0.40.0 target="build-script-main"}: cargo::core::compiler::fingerprint: fingerprint dirty for aws-lc-sys v0.40.0/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-main", "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.40.0/builder/main.rs", Edition2021) }
+   0.096183251s  INFO prepare_target{force=false package_id=aws-lc-sys v0.40.0 target="build-script-main"}: cargo::core::compiler::fingerprint:     dirty: EnvVarChanged { name: "CC", old_value: Some("gcc"), new_value: None }
+   0.096651554s  INFO prepare_target{force=false package_id=aws-lc-sys v0.40.0 target="aws_lc_sys"}: cargo::core::compiler::fingerprint: fingerprint dirty for aws-lc-sys v0.40.0/Check { test: false }/TargetInner { ..: lib_target("aws_lc_sys", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.40.0/src/lib.rs", Edition2021) }
+   0.096659699s  INFO prepare_target{force=false package_id=aws-lc-sys v0.40.0 target="aws_lc_sys"}: cargo::core::compiler::fingerprint:     dirty: UnitDependencyInfoChanged { unit: UnitIndex(8) }
+   0.096894487s  INFO prepare_target{force=false package_id=rustls v0.23.40 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint dirty for rustls v0.23.40/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustls-0.23.40/build.rs", Edition2021) }
+   0.096901380s  INFO prepare_target{force=false package_id=rustls v0.23.40 target="build-script-build"}: cargo::core::compiler::fingerprint:     dirty: UnitDependencyInfoChanged { unit: UnitIndex(5) }
+   0.097052992s  INFO prepare_target{force=false package_id=rustls-webpki v0.103.13 target="webpki"}: cargo::core::compiler::fingerprint: fingerprint dirty for rustls-webpki v0.103.13/Check { test: false }/TargetInner { ..: lib_target("webpki", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustls-webpki-0.103.13/src/lib.rs", Edition2021) }
+   0.097059695s  INFO prepare_target{force=false package_id=rustls-webpki v0.103.13 target="webpki"}: cargo::core::compiler::fingerprint:     dirty: UnitDependencyInfoChanged { unit: UnitIndex(3) }
+   0.097308518s  INFO prepare_target{force=false package_id=tokio-rustls v0.26.4 target="tokio_rustls"}: cargo::core::compiler::fingerprint: fingerprint dirty for tokio-rustls v0.26.4/Check { test: false }/TargetInner { ..: lib_target("tokio_rustls", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-rustls-0.26.4/src/lib.rs", Edition2021) }
+   0.097318517s  INFO prepare_target{force=false package_id=tokio-rustls v0.26.4 target="tokio_rustls"}: cargo::core::compiler::fingerprint:     dirty: UnitDependencyInfoChanged { unit: UnitIndex(100) }
+   0.097592437s  INFO prepare_target{force=false package_id=rustls-platform-verifier v0.7.0 target="rustls_platform_verifier"}: cargo::core::compiler::fingerprint: fingerprint dirty for rustls-platform-verifier v0.7.0/Check { test: false }/TargetInner { ..: lib_target("rustls_platform_verifier", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustls-platform-verifier-0.7.0/src/lib.rs", Edition2021) }
+   0.097599601s  INFO prepare_target{force=false package_id=rustls-platform-verifier v0.7.0 target="rustls_platform_verifier"}: cargo::core::compiler::fingerprint:     dirty: UnitDependencyInfoChanged { unit: UnitIndex(106) }
+   0.100453999s  INFO prepare_target{force=false package_id=rymrss v0.1.0 (/home/will/git/rymrss) target="rymrss"}: cargo::core::compiler::fingerprint: fingerprint error for rymrss v0.1.0 (/home/will/git/rymrss)/Check { test: true }/TargetInner { name: "rymrss", doc: true, ..: with_path("/home/will/git/rymrss/src/main.rs", Edition2024) }
+   0.100468476s  INFO prepare_target{force=false package_id=rymrss v0.1.0 (/home/will/git/rymrss) target="rymrss"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/rymrss/target/debug/.fingerprint/rymrss-544126cb23cc2776/test-bin-rymrss`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::io::error::Error as anyhow::context::ext::StdError>::ext_context::<alloc::string::String>
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::prepare_target
+   3: cargo::core::compiler::compile
+   4: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   5: cargo::ops::cargo_compile::compile_ws
+   6: cargo::ops::cargo_compile::compile_with_exec
+   7: cargo::ops::cargo_compile::compile
+   8: cargo::commands::check::exec
+   9: <cargo::cli::Exec>::exec
+  10: cargo::cli::main
+  11: cargo::main
+  12: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  13: std::rt::lang_start::<()>::{closure#0}
+  14: std::rt::lang_start_internal
+  15: main
+  16: __libc_start_call_main
+  17: __libc_start_main_alias_2
+  18: _start
+   Compiling aws-lc-sys v0.40.0
+warning: aws-lc-sys@0.40.0: Environment Variable found 'CARGO_ENCODED_RUSTFLAGS': ''
+warning: aws-lc-sys@0.40.0: Emitting configuration: cargo:rustc-cfg=universal
+warning: aws-lc-sys@0.40.0: Building with: CC
+warning: aws-lc-sys@0.40.0: Symbol Prefix: Some("aws_lc_0_40_0")
+warning: aws-lc-sys@0.40.0: Target platform: 'x86_64-unknown-linux-gnu'
+warning: aws-lc-sys@0.40.0: Compiler family detection failed due to error: ToolNotFound: failed to find tool "cc": No such file or directory (os error 2)
+warning: aws-lc-sys@0.40.0: Compiler family detection failed due to error: ToolNotFound: failed to find tool "cc": No such file or directory (os error 2)
+warning: aws-lc-sys@0.40.0: Compiler family detection failed due to error: ToolNotFound: failed to find tool "cc": No such file or directory (os error 2)
+warning: aws-lc-sys@0.40.0: Compiler family detection failed due to error: ToolNotFound: failed to find tool "cc": No such file or directory (os error 2)
+warning: aws-lc-sys@0.40.0: Compilation of 'c11.c' failed - Err(Error { kind: ToolNotFound, message: "failed to find tool \"cc\": No such file or directory (os error 2)" }).
+warning: aws-lc-sys@0.40.0: Compiler family detection failed due to error: ToolNotFound: failed to find tool "cc": No such file or directory (os error 2)
+warning: aws-lc-sys@0.40.0: Compiler family detection failed due to error: ToolNotFound: failed to find tool "cc": No such file or directory (os error 2)
+warning: aws-lc-sys@0.40.0: Compilation of 'stdalign_check.c' failed - Err(Error { kind: ToolNotFound, message: "failed to find tool \"cc\": No such file or directory (os error 2)" }).
+warning: aws-lc-sys@0.40.0: Compiler family detection failed due to error: ToolNotFound: failed to find tool "cc": No such file or directory (os error 2)
+warning: aws-lc-sys@0.40.0: Compiler family detection failed due to error: ToolNotFound: failed to find tool "cc": No such file or directory (os error 2)
+warning: aws-lc-sys@0.40.0: Compilation of 'builtin_swap_check.c' failed - Err(Error { kind: ToolNotFound, message: "failed to find tool \"cc\": No such file or directory (os error 2)" }).
+warning: aws-lc-sys@0.40.0: Compiler family detection failed due to error: ToolNotFound: failed to find tool "cc": No such file or directory (os error 2)
+warning: aws-lc-sys@0.40.0: Compiler family detection failed due to error: ToolNotFound: failed to find tool "cc": No such file or directory (os error 2)
+warning: aws-lc-sys@0.40.0: Compilation of 'linux_random_h.c' failed - Err(Error { kind: ToolNotFound, message: "failed to find tool \"cc\": No such file or directory (os error 2)" }).
+warning: aws-lc-sys@0.40.0: Compiler family detection failed due to error: ToolNotFound: failed to find tool "cc": No such file or directory (os error 2)
+warning: aws-lc-sys@0.40.0: Compiler family detection failed due to error: ToolNotFound: failed to find tool "cc": No such file or directory (os error 2)
+warning: aws-lc-sys@0.40.0: Compilation of 'linux_random_h.c' failed - Err(Error { kind: ToolNotFound, message: "failed to find tool \"cc\": No such file or directory (os error 2)" }).
+warning: aws-lc-sys@0.40.0: Compiler family detection failed due to error: ToolNotFound: failed to find tool "cc": No such file or directory (os error 2)
+error: failed to run custom build command for `aws-lc-sys v0.40.0`
+note: To improve backtraces for build dependencies, set the CARGO_PROFILE_DEV_BUILD_OVERRIDE_DEBUG=true environment variable to enable debug information generation.
+
+Caused by:
+  process didn't exit successfully: `/home/will/git/rymrss/target/debug/build/aws-lc-sys-5d4af7bf552f1e3e/build-script-main` (exit status: 101)
+  --- stdout
+  cargo:rerun-if-env-changed=AWS_LC_SYS_NO_PREFIX_x86_64_unknown_linux_gnu
+  cargo:rerun-if-env-changed=AWS_LC_SYS_NO_PREFIX
+  cargo:rerun-if-env-changed=AWS_LC_SYS_PREGENERATING_BINDINGS_x86_64_unknown_linux_gnu
+  cargo:rerun-if-env-changed=AWS_LC_SYS_PREGENERATING_BINDINGS
+  cargo:rerun-if-env-changed=AWS_LC_SYS_EXTERNAL_BINDGEN_x86_64_unknown_linux_gnu
+  cargo:rerun-if-env-changed=AWS_LC_SYS_EXTERNAL_BINDGEN
+  cargo:rerun-if-env-changed=AWS_LC_SYS_NO_ASM_x86_64_unknown_linux_gnu
+  cargo:rerun-if-env-changed=AWS_LC_SYS_NO_ASM
+  cargo:rerun-if-env-changed=AWS_LC_SYS_PREBUILT_NASM_x86_64_unknown_linux_gnu
+  cargo:rerun-if-env-changed=AWS_LC_SYS_PREBUILT_NASM
+  cargo:rerun-if-env-changed=AWS_LC_SYS_C_STD_x86_64_unknown_linux_gnu
+  cargo:rerun-if-env-changed=AWS_LC_SYS_C_STD
+  cargo:rerun-if-env-changed=AWS_LC_SYS_CMAKE_BUILDER_x86_64_unknown_linux_gnu
+  cargo:rerun-if-env-changed=AWS_LC_SYS_CMAKE_BUILDER
+  cargo:rerun-if-env-changed=AWS_LC_SYS_NO_PREGENERATED_SRC_x86_64_unknown_linux_gnu
+  cargo:rerun-if-env-changed=AWS_LC_SYS_NO_PREGENERATED_SRC
+  cargo:rerun-if-env-changed=AWS_LC_SYS_EFFECTIVE_TARGET_x86_64_unknown_linux_gnu
+  cargo:rerun-if-env-changed=AWS_LC_SYS_EFFECTIVE_TARGET
+  cargo:rerun-if-env-changed=AWS_LC_SYS_NO_JITTER_ENTROPY_x86_64_unknown_linux_gnu
+  cargo:rerun-if-env-changed=AWS_LC_SYS_NO_JITTER_ENTROPY
+  cargo:rerun-if-env-changed=AWS_LC_SYS_NO_U1_BINDINGS_x86_64_unknown_linux_gnu
+  cargo:rerun-if-env-changed=AWS_LC_SYS_NO_U1_BINDINGS
+  cargo:rerun-if-env-changed=AWS_LC_SYS_INCLUDES_x86_64_unknown_linux_gnu
+  cargo:rerun-if-env-changed=AWS_LC_SYS_INCLUDES
+  cargo:rerun-if-env-changed=AWS_LC_SYS_SANITIZER_x86_64_unknown_linux_gnu
+  cargo:rerun-if-env-changed=AWS_LC_SYS_SANITIZER
+  cargo:rerun-if-env-changed=CARGO_ENCODED_RUSTFLAGS
+  cargo:warning=Environment Variable found 'CARGO_ENCODED_RUSTFLAGS': ''
+  cargo:warning=Emitting configuration: cargo:rustc-cfg=universal
+  cargo:rustc-cfg=universal
+  cargo:rerun-if-env-changed=AWS_LC_SYS_STATIC_x86_64_unknown_linux_gnu
+  cargo:rerun-if-env-changed=AWS_LC_SYS_STATIC
+  cargo:rerun-if-env-changed=CARGO_FEATURE_SSL
+  cargo:warning=Building with: CC
+  cargo:warning=Symbol Prefix: Some("aws_lc_0_40_0")
+  cargo:rerun-if-env-changed=CARGO_FEATURE_SSL
+  cargo:warning=Target platform: 'x86_64-unknown-linux-gnu'
+  cargo:root=/home/will/git/rymrss/target/debug/build/aws-lc-sys-a887e38ff6db6529/out
+  cargo:rerun-if-env-changed=AWS_LC_SYS_TARGET_CFLAGS_x86_64_unknown_linux_gnu
+  cargo:rerun-if-env-changed=AWS_LC_SYS_TARGET_CFLAGS
+  cargo:rerun-if-env-changed=TARGET_CFLAGS_x86_64_unknown_linux_gnu
+  cargo:rerun-if-env-changed=TARGET_CFLAGS
+  cargo:rerun-if-env-changed=AWS_LC_SYS_CFLAGS_x86_64_unknown_linux_gnu
+  cargo:rerun-if-env-changed=AWS_LC_SYS_CFLAGS
+  cargo:rerun-if-env-changed=CFLAGS_x86_64_unknown_linux_gnu
+  cargo:rerun-if-env-changed=CFLAGS
+  cargo:rerun-if-env-changed=CC_x86_64-unknown-linux-gnu
+  CC_x86_64-unknown-linux-gnu = None
+  cargo:rerun-if-env-changed=CC_x86_64_unknown_linux_gnu
+  CC_x86_64_unknown_linux_gnu = None
+  cargo:rerun-if-env-changed=HOST_CC
+  HOST_CC = None
+  cargo:rerun-if-env-changed=CC
+  CC = None
+  cargo:rerun-if-env-changed=CC_ENABLE_DEBUG_OUTPUT
+  cargo:warning=Compiler family detection failed due to error: ToolNotFound: failed to find tool "cc": No such file or directory (os error 2)
+  cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+  CRATE_CC_NO_DEFAULTS = None
+  cargo:rerun-if-env-changed=CFLAGS
+  CFLAGS = None
+  cargo:rerun-if-env-changed=HOST_CFLAGS
+  HOST_CFLAGS = None
+  cargo:rerun-if-env-changed=CFLAGS_x86_64_unknown_linux_gnu
+  CFLAGS_x86_64_unknown_linux_gnu = None
+  cargo:rerun-if-env-changed=CFLAGS_x86_64-unknown-linux-gnu
+  CFLAGS_x86_64-unknown-linux-gnu = None
+  cargo:rerun-if-env-changed=CC_x86_64-unknown-linux-gnu
+  CC_x86_64-unknown-linux-gnu = None
+  cargo:rerun-if-env-changed=CC_x86_64_unknown_linux_gnu
+  CC_x86_64_unknown_linux_gnu = None
+  cargo:rerun-if-env-changed=HOST_CC
+  HOST_CC = None
+  cargo:rerun-if-env-changed=CC
+  CC = None
+  cargo:warning=Compiler family detection failed due to error: ToolNotFound: failed to find tool "cc": No such file or directory (os error 2)
+  cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+  CRATE_CC_NO_DEFAULTS = None
+  cargo:rerun-if-env-changed=CFLAGS
+  CFLAGS = None
+  cargo:rerun-if-env-changed=HOST_CFLAGS
+  HOST_CFLAGS = None
+  cargo:rerun-if-env-changed=CFLAGS_x86_64_unknown_linux_gnu
+  CFLAGS_x86_64_unknown_linux_gnu = None
+  cargo:rerun-if-env-changed=CFLAGS_x86_64-unknown-linux-gnu
+  CFLAGS_x86_64-unknown-linux-gnu = None
+  cargo:rerun-if-env-changed=CC_x86_64-unknown-linux-gnu
+  CC_x86_64-unknown-linux-gnu = None
+  cargo:rerun-if-env-changed=CC_x86_64_unknown_linux_gnu
+  CC_x86_64_unknown_linux_gnu = None
+  cargo:rerun-if-env-changed=HOST_CC
+  HOST_CC = None
+  cargo:rerun-if-env-changed=CC
+  CC = None
+  cargo:rerun-if-env-changed=CC_ENABLE_DEBUG_OUTPUT
+  cargo:warning=Compiler family detection failed due to error: ToolNotFound: failed to find tool "cc": No such file or directory (os error 2)
+  cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+  CRATE_CC_NO_DEFAULTS = None
+  cargo:rerun-if-env-changed=CFLAGS
+  CFLAGS = None
+  cargo:rerun-if-env-changed=HOST_CFLAGS
+  HOST_CFLAGS = None
+  cargo:rerun-if-env-changed=CFLAGS_x86_64_unknown_linux_gnu
+  CFLAGS_x86_64_unknown_linux_gnu = None
+  cargo:rerun-if-env-changed=CFLAGS_x86_64-unknown-linux-gnu
+  CFLAGS_x86_64-unknown-linux-gnu = None
+  cargo:rerun-if-env-changed=CC_FORCE_DISABLE
+  CC_FORCE_DISABLE = None
+  cargo:rerun-if-env-changed=CC_x86_64-unknown-linux-gnu
+  CC_x86_64-unknown-linux-gnu = None
+  cargo:rerun-if-env-changed=CC_x86_64_unknown_linux_gnu
+  CC_x86_64_unknown_linux_gnu = None
+  cargo:rerun-if-env-changed=HOST_CC
+  HOST_CC = None
+  cargo:rerun-if-env-changed=CC
+  CC = None
+  cargo:warning=Compiler family detection failed due to error: ToolNotFound: failed to find tool "cc": No such file or directory (os error 2)
+  cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+  CRATE_CC_NO_DEFAULTS = None
+  cargo:rerun-if-env-changed=CFLAGS
+  CFLAGS = None
+  cargo:rerun-if-env-changed=HOST_CFLAGS
+  HOST_CFLAGS = None
+  cargo:rerun-if-env-changed=CFLAGS_x86_64_unknown_linux_gnu
+  CFLAGS_x86_64_unknown_linux_gnu = None
+  cargo:rerun-if-env-changed=CFLAGS_x86_64-unknown-linux-gnu
+  CFLAGS_x86_64-unknown-linux-gnu = None
+  cargo:warning=Compilation of 'c11.c' failed - Err(Error { kind: ToolNotFound, message: "failed to find tool \"cc\": No such file or directory (os error 2)" }).
+  cargo:rerun-if-env-changed=AWS_LC_SYS_TARGET_CC_x86_64_unknown_linux_gnu
+  cargo:rerun-if-env-changed=AWS_LC_SYS_TARGET_CC
+  cargo:rerun-if-env-changed=TARGET_CC_x86_64_unknown_linux_gnu
+  cargo:rerun-if-env-changed=TARGET_CC
+  cargo:rerun-if-env-changed=AWS_LC_SYS_CC_x86_64_unknown_linux_gnu
+  cargo:rerun-if-env-changed=AWS_LC_SYS_CC
+  cargo:rerun-if-env-changed=CC_x86_64_unknown_linux_gnu
+  cargo:rerun-if-env-changed=CC
+  cargo:rerun-if-env-changed=AWS_LC_SYS_TARGET_CXX_x86_64_unknown_linux_gnu
+  cargo:rerun-if-env-changed=AWS_LC_SYS_TARGET_CXX
+  cargo:rerun-if-env-changed=TARGET_CXX_x86_64_unknown_linux_gnu
+  cargo:rerun-if-env-changed=TARGET_CXX
+  cargo:rerun-if-env-changed=AWS_LC_SYS_CXX_x86_64_unknown_linux_gnu
+  cargo:rerun-if-env-changed=AWS_LC_SYS_CXX
+  cargo:rerun-if-env-changed=CXX_x86_64_unknown_linux_gnu
+  cargo:rerun-if-env-changed=CXX
+  cargo:rerun-if-env-changed=CC_x86_64-unknown-linux-gnu
+  CC_x86_64-unknown-linux-gnu = None
+  cargo:rerun-if-env-changed=CC_x86_64_unknown_linux_gnu
+  CC_x86_64_unknown_linux_gnu = None
+  cargo:rerun-if-env-changed=HOST_CC
+  HOST_CC = None
+  cargo:rerun-if-env-changed=CC
+  CC = None
+  cargo:rerun-if-env-changed=CC_ENABLE_DEBUG_OUTPUT
+  cargo:warning=Compiler family detection failed due to error: ToolNotFound: failed to find tool "cc": No such file or directory (os error 2)
+  cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+  CRATE_CC_NO_DEFAULTS = None
+  cargo:rerun-if-env-changed=CFLAGS
+  CFLAGS = None
+  cargo:rerun-if-env-changed=HOST_CFLAGS
+  HOST_CFLAGS = None
+  cargo:rerun-if-env-changed=CFLAGS_x86_64_unknown_linux_gnu
+  CFLAGS_x86_64_unknown_linux_gnu = None
+  cargo:rerun-if-env-changed=CFLAGS_x86_64-unknown-linux-gnu
+  CFLAGS_x86_64-unknown-linux-gnu = None
+  cargo:rerun-if-env-changed=CC_FORCE_DISABLE
+  CC_FORCE_DISABLE = None
+  cargo:rerun-if-env-changed=CC_x86_64-unknown-linux-gnu
+  CC_x86_64-unknown-linux-gnu = None
+  cargo:rerun-if-env-changed=CC_x86_64_unknown_linux_gnu
+  CC_x86_64_unknown_linux_gnu = None
+  cargo:rerun-if-env-changed=HOST_CC
+  HOST_CC = None
+  cargo:rerun-if-env-changed=CC
+  CC = None
+  cargo:warning=Compiler family detection failed due to error: ToolNotFound: failed to find tool "cc": No such file or directory (os error 2)
+  cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+  CRATE_CC_NO_DEFAULTS = None
+  cargo:rerun-if-env-changed=CFLAGS
+  CFLAGS = None
+  cargo:rerun-if-env-changed=HOST_CFLAGS
+  HOST_CFLAGS = None
+  cargo:rerun-if-env-changed=CFLAGS_x86_64_unknown_linux_gnu
+  CFLAGS_x86_64_unknown_linux_gnu = None
+  cargo:rerun-if-env-changed=CFLAGS_x86_64-unknown-linux-gnu
+  CFLAGS_x86_64-unknown-linux-gnu = None
+  cargo:warning=Compilation of 'stdalign_check.c' failed - Err(Error { kind: ToolNotFound, message: "failed to find tool \"cc\": No such file or directory (os error 2)" }).
+  cargo:rerun-if-env-changed=CC_x86_64-unknown-linux-gnu
+  CC_x86_64-unknown-linux-gnu = None
+  cargo:rerun-if-env-changed=CC_x86_64_unknown_linux_gnu
+  CC_x86_64_unknown_linux_gnu = None
+  cargo:rerun-if-env-changed=HOST_CC
+  HOST_CC = None
+  cargo:rerun-if-env-changed=CC
+  CC = None
+  cargo:rerun-if-env-changed=CC_ENABLE_DEBUG_OUTPUT
+  cargo:warning=Compiler family detection failed due to error: ToolNotFound: failed to find tool "cc": No such file or directory (os error 2)
+  cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+  CRATE_CC_NO_DEFAULTS = None
+  cargo:rerun-if-env-changed=CFLAGS
+  CFLAGS = None
+  cargo:rerun-if-env-changed=HOST_CFLAGS
+  HOST_CFLAGS = None
+  cargo:rerun-if-env-changed=CFLAGS_x86_64_unknown_linux_gnu
+  CFLAGS_x86_64_unknown_linux_gnu = None
+  cargo:rerun-if-env-changed=CFLAGS_x86_64-unknown-linux-gnu
+  CFLAGS_x86_64-unknown-linux-gnu = None
+  cargo:rerun-if-env-changed=CC_FORCE_DISABLE
+  CC_FORCE_DISABLE = None
+  cargo:rerun-if-env-changed=CC_x86_64-unknown-linux-gnu
+  CC_x86_64-unknown-linux-gnu = None
+  cargo:rerun-if-env-changed=CC_x86_64_unknown_linux_gnu
+  CC_x86_64_unknown_linux_gnu = None
+  cargo:rerun-if-env-changed=HOST_CC
+  HOST_CC = None
+  cargo:rerun-if-env-changed=CC
+  CC = None
+  cargo:warning=Compiler family detection failed due to error: ToolNotFound: failed to find tool "cc": No such file or directory (os error 2)
+  cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+  CRATE_CC_NO_DEFAULTS = None
+  cargo:rerun-if-env-changed=CFLAGS
+  CFLAGS = None
+  cargo:rerun-if-env-changed=HOST_CFLAGS
+  HOST_CFLAGS = None
+  cargo:rerun-if-env-changed=CFLAGS_x86_64_unknown_linux_gnu
+  CFLAGS_x86_64_unknown_linux_gnu = None
+  cargo:rerun-if-env-changed=CFLAGS_x86_64-unknown-linux-gnu
+  CFLAGS_x86_64-unknown-linux-gnu = None
+  cargo:warning=Compilation of 'builtin_swap_check.c' failed - Err(Error { kind: ToolNotFound, message: "failed to find tool \"cc\": No such file or directory (os error 2)" }).
+  cargo:rerun-if-env-changed=CC_x86_64-unknown-linux-gnu
+  CC_x86_64-unknown-linux-gnu = None
+  cargo:rerun-if-env-changed=CC_x86_64_unknown_linux_gnu
+  CC_x86_64_unknown_linux_gnu = None
+  cargo:rerun-if-env-changed=HOST_CC
+  HOST_CC = None
+  cargo:rerun-if-env-changed=CC
+  CC = None
+  cargo:rerun-if-env-changed=CC_ENABLE_DEBUG_OUTPUT
+  cargo:warning=Compiler family detection failed due to error: ToolNotFound: failed to find tool "cc": No such file or directory (os error 2)
+  cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+  CRATE_CC_NO_DEFAULTS = None
+  cargo:rerun-if-env-changed=CFLAGS
+  CFLAGS = None
+  cargo:rerun-if-env-changed=HOST_CFLAGS
+  HOST_CFLAGS = None
+  cargo:rerun-if-env-changed=CFLAGS_x86_64_unknown_linux_gnu
+  CFLAGS_x86_64_unknown_linux_gnu = None
+  cargo:rerun-if-env-changed=CFLAGS_x86_64-unknown-linux-gnu
+  CFLAGS_x86_64-unknown-linux-gnu = None
+  cargo:rerun-if-env-changed=CC_FORCE_DISABLE
+  CC_FORCE_DISABLE = None
+  cargo:rerun-if-env-changed=CC_x86_64-unknown-linux-gnu
+  CC_x86_64-unknown-linux-gnu = None
+  cargo:rerun-if-env-changed=CC_x86_64_unknown_linux_gnu
+  CC_x86_64_unknown_linux_gnu = None
+  cargo:rerun-if-env-changed=HOST_CC
+  HOST_CC = None
+  cargo:rerun-if-env-changed=CC
+  CC = None
+  cargo:warning=Compiler family detection failed due to error: ToolNotFound: failed to find tool "cc": No such file or directory (os error 2)
+  cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+  CRATE_CC_NO_DEFAULTS = None
+  cargo:rerun-if-env-changed=CFLAGS
+  CFLAGS = None
+  cargo:rerun-if-env-changed=HOST_CFLAGS
+  HOST_CFLAGS = None
+  cargo:rerun-if-env-changed=CFLAGS_x86_64_unknown_linux_gnu
+  CFLAGS_x86_64_unknown_linux_gnu = None
+  cargo:rerun-if-env-changed=CFLAGS_x86_64-unknown-linux-gnu
+  CFLAGS_x86_64-unknown-linux-gnu = None
+  cargo:warning=Compilation of 'linux_random_h.c' failed - Err(Error { kind: ToolNotFound, message: "failed to find tool \"cc\": No such file or directory (os error 2)" }).
+  cargo:rerun-if-env-changed=CC_x86_64-unknown-linux-gnu
+  CC_x86_64-unknown-linux-gnu = None
+  cargo:rerun-if-env-changed=CC_x86_64_unknown_linux_gnu
+  CC_x86_64_unknown_linux_gnu = None
+  cargo:rerun-if-env-changed=HOST_CC
+  HOST_CC = None
+  cargo:rerun-if-env-changed=CC
+  CC = None
+  cargo:rerun-if-env-changed=CC_ENABLE_DEBUG_OUTPUT
+  cargo:warning=Compiler family detection failed due to error: ToolNotFound: failed to find tool "cc": No such file or directory (os error 2)
+  cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+  CRATE_CC_NO_DEFAULTS = None
+  cargo:rerun-if-env-changed=CFLAGS
+  CFLAGS = None
+  cargo:rerun-if-env-changed=HOST_CFLAGS
+  HOST_CFLAGS = None
+  cargo:rerun-if-env-changed=CFLAGS_x86_64_unknown_linux_gnu
+  CFLAGS_x86_64_unknown_linux_gnu = None
+  cargo:rerun-if-env-changed=CFLAGS_x86_64-unknown-linux-gnu
+  CFLAGS_x86_64-unknown-linux-gnu = None
+  cargo:rerun-if-env-changed=CC_FORCE_DISABLE
+  CC_FORCE_DISABLE = None
+  cargo:rerun-if-env-changed=CC_x86_64-unknown-linux-gnu
+  CC_x86_64-unknown-linux-gnu = None
+  cargo:rerun-if-env-changed=CC_x86_64_unknown_linux_gnu
+  CC_x86_64_unknown_linux_gnu = None
+  cargo:rerun-if-env-changed=HOST_CC
+  HOST_CC = None
+  cargo:rerun-if-env-changed=CC
+  CC = None
+  cargo:warning=Compiler family detection failed due to error: ToolNotFound: failed to find tool "cc": No such file or directory (os error 2)
+  cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+  CRATE_CC_NO_DEFAULTS = None
+  cargo:rerun-if-env-changed=CFLAGS
+  CFLAGS = None
+  cargo:rerun-if-env-changed=HOST_CFLAGS
+  HOST_CFLAGS = None
+  cargo:rerun-if-env-changed=CFLAGS_x86_64_unknown_linux_gnu
+  CFLAGS_x86_64_unknown_linux_gnu = None
+  cargo:rerun-if-env-changed=CFLAGS_x86_64-unknown-linux-gnu
+  CFLAGS_x86_64-unknown-linux-gnu = None
+  cargo:warning=Compilation of 'linux_random_h.c' failed - Err(Error { kind: ToolNotFound, message: "failed to find tool \"cc\": No such file or directory (os error 2)" }).
+  cargo:rerun-if-env-changed=CC_x86_64-unknown-linux-gnu
+  CC_x86_64-unknown-linux-gnu = None
+  cargo:rerun-if-env-changed=CC_x86_64_unknown_linux_gnu
+  CC_x86_64_unknown_linux_gnu = None
+  cargo:rerun-if-env-changed=HOST_CC
+  HOST_CC = None
+  cargo:rerun-if-env-changed=CC
+  CC = None
+  cargo:rerun-if-env-changed=CC_ENABLE_DEBUG_OUTPUT
+  cargo:warning=Compiler family detection failed due to error: ToolNotFound: failed to find tool "cc": No such file or directory (os error 2)
+  cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+  CRATE_CC_NO_DEFAULTS = None
+  cargo:rerun-if-env-changed=CFLAGS
+  CFLAGS = None
+  cargo:rerun-if-env-changed=HOST_CFLAGS
+  HOST_CFLAGS = None
+  cargo:rerun-if-env-changed=CFLAGS_x86_64_unknown_linux_gnu
+  CFLAGS_x86_64_unknown_linux_gnu = None
+  cargo:rerun-if-env-changed=CFLAGS_x86_64-unknown-linux-gnu
+  CFLAGS_x86_64-unknown-linux-gnu = None
+
+  --- stderr
+
+  thread 'main' (322055) panicked at /home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.40.0/builder/cc_builder.rs:714:9:
+  COMPILER: ccARGS: ["-O0", "-ffunction-sections", "-fdata-sections", "-fPIC", "-g", "-gdwarf-4", "-fno-omit-frame-pointer", "-m64", "-Wall", "-Wextra", "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.40.0/aws-lc/tests/compiler_features_tests/memcmp_invalid_stripped_check.c", "-Wno-unused-parameter", "-o", "/home/will/git/rymrss/target/debug/build/aws-lc-sys-a887e38ff6db6529/out/memcmp_invalid_stripped_check"]EXECUTED: falseERROR: OUTPUT: Failed to compile memcmp_invalid_stripped_check
+              
+  stack backtrace:
+     0: __rustc::rust_begin_unwind
+     1: core::panicking::panic_fmt
+     2: build_script_main::cc_builder::CcBuilder::memcmp_check
+     3: build_script_main::cc_builder::CcBuilder::run_compiler_checks
+     4: build_script_main::cc_builder::CcBuilder::build_library
+     5: <build_script_main::cc_builder::CcBuilder as build_script_main::Builder>::build
+     6: build_script_main::main
+     7: core::ops::function::FnOnce::call_once
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
