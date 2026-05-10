@@ -1,82 +1,12 @@
-   0.093492973s  INFO prepare_target{force=false package_id=rymrss v0.1.0 (/home/will/git/rymrss) target="rymrss"}: cargo::core::compiler::fingerprint: fingerprint error for rymrss v0.1.0 (/home/will/git/rymrss)/Check { test: false }/TargetInner { name: "rymrss", doc: true, ..: with_path("/home/will/git/rymrss/src/main.rs", Edition2024) }
-   0.093515325s  INFO prepare_target{force=false package_id=rymrss v0.1.0 (/home/will/git/rymrss) target="rymrss"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/rymrss/target/debug/.fingerprint/rymrss-c5922050ff7e1e3c/bin-rymrss`
-
-Caused by:
-    No such file or directory (os error 2)
-
-Stack backtrace:
-   0: <std::io::error::Error as anyhow::context::ext::StdError>::ext_context::<alloc::string::String>
-   1: cargo_util::paths::read
-   2: cargo::core::compiler::fingerprint::prepare_target
-   3: cargo::core::compiler::compile
-   4: <cargo::core::compiler::build_runner::BuildRunner>::compile
-   5: cargo::ops::cargo_compile::compile_ws
-   6: cargo::ops::cargo_compile::compile_with_exec
-   7: cargo::ops::cargo_compile::compile
-   8: cargo::commands::check::exec
-   9: <cargo::cli::Exec>::exec
-  10: cargo::cli::main
-  11: cargo::main
-  12: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
-  13: std::rt::lang_start::<()>::{closure#0}
-  14: std::rt::lang_start_internal
-  15: main
-  16: __libc_start_call_main
-  17: __libc_start_main_alias_2
-  18: _start
-   0.097329108s  INFO prepare_target{force=false package_id=anyhow v1.0.102 target="anyhow"}: cargo::core::compiler::fingerprint: fingerprint error for anyhow v1.0.102/Check { test: false }/TargetInner { ..: lib_target("anyhow", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anyhow-1.0.102/src/lib.rs", Edition2021) }
-   0.097347302s  INFO prepare_target{force=false package_id=anyhow v1.0.102 target="anyhow"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/rymrss/target/debug/.fingerprint/anyhow-8cfb22ac5ced42c9/lib-anyhow`
-
-Caused by:
-    No such file or directory (os error 2)
-
-Stack backtrace:
-   0: <std::io::error::Error as anyhow::context::ext::StdError>::ext_context::<alloc::string::String>
-   1: cargo_util::paths::read
-   2: cargo::core::compiler::fingerprint::prepare_target
-   3: cargo::core::compiler::compile
-   4: cargo::core::compiler::compile
-   5: <cargo::core::compiler::build_runner::BuildRunner>::compile
-   6: cargo::ops::cargo_compile::compile_ws
-   7: cargo::ops::cargo_compile::compile_with_exec
-   8: cargo::ops::cargo_compile::compile
-   9: cargo::commands::check::exec
-  10: <cargo::cli::Exec>::exec
-  11: cargo::cli::main
-  12: cargo::main
-  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
-  14: std::rt::lang_start::<()>::{closure#0}
-  15: std::rt::lang_start_internal
-  16: main
-  17: __libc_start_call_main
-  18: __libc_start_main_alias_2
-  19: _start
-   0.105887861s  INFO prepare_target{force=false package_id=rymrss v0.1.0 (/home/will/git/rymrss) target="rymrss"}: cargo::core::compiler::fingerprint: fingerprint error for rymrss v0.1.0 (/home/will/git/rymrss)/Check { test: true }/TargetInner { name: "rymrss", doc: true, ..: with_path("/home/will/git/rymrss/src/main.rs", Edition2024) }
-   0.105912057s  INFO prepare_target{force=false package_id=rymrss v0.1.0 (/home/will/git/rymrss) target="rymrss"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/rymrss/target/debug/.fingerprint/rymrss-5b77ef567013fa14/test-bin-rymrss`
-
-Caused by:
-    No such file or directory (os error 2)
-
-Stack backtrace:
-   0: <std::io::error::Error as anyhow::context::ext::StdError>::ext_context::<alloc::string::String>
-   1: cargo_util::paths::read
-   2: cargo::core::compiler::fingerprint::prepare_target
-   3: cargo::core::compiler::compile
-   4: <cargo::core::compiler::build_runner::BuildRunner>::compile
-   5: cargo::ops::cargo_compile::compile_ws
-   6: cargo::ops::cargo_compile::compile_with_exec
-   7: cargo::ops::cargo_compile::compile
-   8: cargo::commands::check::exec
-   9: <cargo::cli::Exec>::exec
-  10: cargo::cli::main
-  11: cargo::main
-  12: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
-  13: std::rt::lang_start::<()>::{closure#0}
-  14: std::rt::lang_start_internal
-  15: main
-  16: __libc_start_call_main
-  17: __libc_start_main_alias_2
-  18: _start
-    Checking anyhow v1.0.102
+   0.168924124s  INFO prepare_target{force=false package_id=rymrss v0.1.0 (/home/will/git/rymrss) target="rymrss"}: cargo::core::compiler::fingerprint: stale: changed "/home/will/git/rymrss/src/main.rs"
+   0.168939723s  INFO prepare_target{force=false package_id=rymrss v0.1.0 (/home/will/git/rymrss) target="rymrss"}: cargo::core::compiler::fingerprint:           (vs) "/home/will/git/rymrss/target/debug/.fingerprint/rymrss-c5922050ff7e1e3c/dep-bin-rymrss"
+   0.168942699s  INFO prepare_target{force=false package_id=rymrss v0.1.0 (/home/will/git/rymrss) target="rymrss"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 1778437985, nanos: 988212080 } < FileTime { seconds: 1778438081, nanos: 784788034 }
+   0.169088382s  INFO prepare_target{force=false package_id=rymrss v0.1.0 (/home/will/git/rymrss) target="rymrss"}: cargo::core::compiler::fingerprint: fingerprint dirty for rymrss v0.1.0 (/home/will/git/rymrss)/Check { test: false }/TargetInner { name: "rymrss", doc: true, ..: with_path("/home/will/git/rymrss/src/main.rs", Edition2024) }
+   0.169098411s  INFO prepare_target{force=false package_id=rymrss v0.1.0 (/home/will/git/rymrss) target="rymrss"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "/home/will/git/rymrss/target/debug/.fingerprint/rymrss-c5922050ff7e1e3c/dep-bin-rymrss", reference_mtime: FileTime { seconds: 1778437985, nanos: 988212080 }, stale: "/home/will/git/rymrss/src/main.rs", stale_mtime: FileTime { seconds: 1778438081, nanos: 784788034 } }))
+   0.177376595s  INFO prepare_target{force=false package_id=rymrss v0.1.0 (/home/will/git/rymrss) target="rymrss"}: cargo::core::compiler::fingerprint: stale: changed "/home/will/git/rymrss/src/main.rs"
+   0.177391362s  INFO prepare_target{force=false package_id=rymrss v0.1.0 (/home/will/git/rymrss) target="rymrss"}: cargo::core::compiler::fingerprint:           (vs) "/home/will/git/rymrss/target/debug/.fingerprint/rymrss-5b77ef567013fa14/dep-test-bin-rymrss"
+   0.177394959s  INFO prepare_target{force=false package_id=rymrss v0.1.0 (/home/will/git/rymrss) target="rymrss"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 1778437985, nanos: 988212080 } < FileTime { seconds: 1778438081, nanos: 784788034 }
+   0.177443500s  INFO prepare_target{force=false package_id=rymrss v0.1.0 (/home/will/git/rymrss) target="rymrss"}: cargo::core::compiler::fingerprint: fingerprint dirty for rymrss v0.1.0 (/home/will/git/rymrss)/Check { test: true }/TargetInner { name: "rymrss", doc: true, ..: with_path("/home/will/git/rymrss/src/main.rs", Edition2024) }
+   0.177454922s  INFO prepare_target{force=false package_id=rymrss v0.1.0 (/home/will/git/rymrss) target="rymrss"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "/home/will/git/rymrss/target/debug/.fingerprint/rymrss-5b77ef567013fa14/dep-test-bin-rymrss", reference_mtime: FileTime { seconds: 1778437985, nanos: 988212080 }, stale: "/home/will/git/rymrss/src/main.rs", stale_mtime: FileTime { seconds: 1778438081, nanos: 784788034 } }))
     Checking rymrss v0.1.0 (/home/will/git/rymrss)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.37s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.26s
